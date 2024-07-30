@@ -25,6 +25,9 @@ $H_A$: The drug triUmpsal is effective in preventing AIDS among drug users
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
+
+The variables 'treatment' and 'infected' are both categorical, meaning they sort data into different categories. The Cat~Cat helper file is appropriate to use, when analyzing them.  
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
