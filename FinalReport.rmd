@@ -64,7 +64,21 @@ The data shows that in the group taking the drug, only 2.89% got AIDS while 97.1
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the chi-squared test is smaller than 0.05, so we reject the null hypothesis, meaning there's a significant link between the treatment and the outcome, indicating the drug might help prevent AIDS.  
+
+The Fisher's exact test gives a p-value of 0.0000000423, also less than 0.05, so we reject the null hypothesis again. The odds ratio is 0.3534:1, suggesting that the treatment was more effective in preventing AIDS than the placebo.  
+
+
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
+The clinical trial data indicate that the drug TriUmpsal significantly reduces the number of AIDS cases among users compared to those who took a placebo. Both the chi-squared and Fisher's exact tests had p-values less than 0.05, showing strong evidence that the drug works. The odds ratio from Fisher's test, which was 0.3534:1, also suggested that TriUmpsal was more effective than the placebo in preventing AIDS, so we reject the null hypothesis.
